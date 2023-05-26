@@ -54,6 +54,11 @@ const forms = (state) => {
                     clearInputs();
                     setTimeout(() => {
                         statusMessage.remove();
+                        // form.forEach(item => {
+                        //     item.style.display = 'none';
+                        // });
+                        // window.style.display = "none";
+                        // document.body.style.overflow = "";
                     }, 5000);
                 });
         })

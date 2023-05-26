@@ -42,6 +42,14 @@ const modals = () => {
                 // document.body.classList.remove('modal-open');
             }
         });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+                // document.body.classList.remove('modal-open');
+            }
+        });
     }
 
     function showModalByTime(selector, time) {
